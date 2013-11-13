@@ -1,0 +1,8 @@
+.classpath
+.project
+.settings/
+target/
+rebel.xml
+/src/main/java/rebel.xml
+/src/main/resources/rebel.xml
+
