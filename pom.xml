@@ -7,14 +7,10 @@
     <properties>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
         <project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding> 
-        
-        <version.hibernate>4.2.7.Final</version.hibernate>
-	    <version.javaee>6.0</version.javaee>
-	    <version.primefaces>4.0</version.primefaces>
-	    <version.commons-lang>2.5</version.commons-lang>
-	    <version.theme>1.0.8</version.theme>      
-	    <version.jat-commons>1.0.0</version.jat-commons> 
-    </properties>
+        <version.javaee>6.0</version.javaee>
+        <version.slf4j>1.7.5</version.slf4j>
+        <version.quartz>2.2.1</version.quartz>
+	</properties>
     <scm>
         
     </scm>    
@@ -24,7 +20,21 @@
     </modules>
     <dependencyManagement>    
         <dependencies>
-        
+	        <dependency>
+	      		<groupId>javax</groupId>
+	      		<artifactId>javaee-api</artifactId>      		
+	      		<version>${version.javaee}</version>
+	    	</dependency>
+	    	<dependency>
+	      		<groupId>org.slf4j</groupId>
+	      		<artifactId>slf4j-api</artifactId>
+	      		<version>${version.slf4j}</version>
+	        </dependency>
+	        <dependency>
+				<groupId>org.quartz-scheduler</groupId>
+				<artifactId>quartz</artifactId>
+				<version>${version.quartz}</version>
+			</dependency>
         </dependencies>
     </dependencyManagement>
     <build>

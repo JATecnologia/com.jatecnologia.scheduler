@@ -1,28 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
  	<modelVersion>4.0.0</modelVersion>
   	<parent>
-		<groupId>com.jatecnologia.login</groupId>    
-		<artifactId>jat-login</artifactId>
-    		<version>1.0.1-SNAPSHOT</version>
+		<groupId>com.jatecnologia.scheduler</groupId>    
+		<artifactId>jat-scheduler</artifactId>
+    		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>    
 	</parent>	
-	<artifactId>jat-login-core</artifactId>
-  	<name>jat-login-core</name>
-  	<url>www.jatecnologia.com/modules/login</url>
+	<artifactId>jat-scheduler-jobs</artifactId>
+  	<name>jat-scheduler-jobs</name>
+  	<url>www.jatecnologia.com/modules/scheduler</url>
   	<organization>
   		<name>J. A. Tecnologia</name>
   		<url>www.jatecnologia.com</url>
   	</organization>
   	<dependencies>
-  		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-      		<groupId>javax</groupId>
-      		<artifactId>javaee-api</artifactId>      		
-      		<scope>provided</scope>
-    	</dependency>		
+  			
   	</dependencies>
 </project>
